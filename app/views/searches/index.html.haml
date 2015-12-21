@@ -1,3 +1,5 @@
-= form_tag("/result", method: :get) do
-  %input{type: "text", name: "url"}
-  = submit_tag "検索"
+.container
+  %h1 食べログのクチコミ ダイジェスト検索
+  = form_tag("/result_tabelog", method: :get) do
+    %input{type: "text", name: "url", placeholder: "食べログのURLいれてくれ"}
+    = submit_tag "検索"

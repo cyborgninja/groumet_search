@@ -16,5 +16,5 @@
 !/log/.keep
 /tmp
 
-.swp
-.swq
+*.swp
+*.swq

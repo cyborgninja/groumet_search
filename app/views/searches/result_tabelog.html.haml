@@ -1,0 +1,11 @@
+%p{style: "text-align: right"}
+  = link_to "back", root_path
+.container
+  %p= link_to "食べログのクチコミ", @url
+  %table
+    - @count.times do |i|
+      %tr
+        %td.url
+          = link_to @title, "http://tabelog.com#{@result_review_url[i]}"
+        %td.review
+          = sanitize("#{@result[i]}")
