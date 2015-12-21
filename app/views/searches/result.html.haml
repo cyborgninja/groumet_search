@@ -5,6 +5,11 @@
 
 %hr
 
-- @result.each do |result|
-  %p= result
--#= @result
+.container
+  %table
+    - @count.times do |i|
+      %tr
+        %td.url
+          = link_to "食べログ", "http://tabelog.com#{@result_review_url[i]}"
+        %td.review
+          = @result[i]
