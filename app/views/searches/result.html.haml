@@ -1,0 +1,10 @@
+%p= @url
+
+%p{style: "text-align: right"}
+  = link_to "back", root_path
+
+%hr
+
+- @result.each do |result|
+  %p= result
+-#= @result
