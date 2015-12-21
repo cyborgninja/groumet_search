@@ -1,5 +1,5 @@
 class SearchesController < ApplicationController
-  before_action :get_mechanize
+  before_action :get_mechanize, except: :index
 
   def index; end
 
