@@ -3,3 +3,12 @@
   = form_tag("/result_tabelog", method: :get) do
     %input{type: "text", name: "url", placeholder: "食べログのURLいれてくれ"}
     = submit_tag "検索"
+  %p 例：http://tabelog.com/tokyo/A1325/A132502/13115398/dtlrvwlst/
+
+  %hr
+
+  %h1 Rettyのクチコミ ダイジェスト検索
+  = form_tag("/result_retty", method: :get) do
+    %input{type: "text", name: "url", placeholder: "Rettyのクチコミ一覧ページのURLいれてくれ"}
+    = submit_tag "検索"
+  %p 例：http://retty.me/area/PRE13/ARE1/SUB104/100000016360/reports/

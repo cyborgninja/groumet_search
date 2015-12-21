@@ -1,0 +1,16 @@
+%p{style: "text-align: right"}
+  = link_to "back", root_path
+.container
+  %p= link_to "Rettyのクチコミ", @url
+  %table
+    - @count.times do |i|
+      %tr
+        %td.url
+          = @title
+        %td
+        %td
+        %td
+          = @result_review_url[i]
+        %td
+        %td.review
+          = sanitize("#{@result[i]}")

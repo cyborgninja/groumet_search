@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'searches#index'
   get 'result_tabelog' => 'searches#result_tabelog'
+  get 'result_retty' => 'searches#result_retty'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
