@@ -13,8 +13,6 @@ gem 'jquery-ui-rails'
 gem 'uglifier'
 gem 'jbuilder'
 gem 'rails_config'
-gem 'sqlite3'
-gem 'mysql2'
 gem 'squeel'
 gem 'simple_form'
 gem 'nested_form'
@@ -25,7 +23,12 @@ gem 'google_drive'
 
 gem 'mechanize'
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'sqlite3'
 end
