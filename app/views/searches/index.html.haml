@@ -1,5 +1,12 @@
 .container
-  %h1 食べログのクチコミ ダイジェスト検索
+  %h1{color: ""}
+    クチコミ
+    %span{style: "font-size: small"} 半分手動
+    収集装置 ver.1
+
+  %hr
+
+  %h3 食べログのクチコミ ダイジェスト検索
   = form_tag("/result_tabelog", method: :get) do
     %input{type: "text", name: "url", placeholder: "食べログのURLいれてくれ"}
     = submit_tag "検索"
@@ -7,8 +14,10 @@
 
   %hr
 
-  %h1 Rettyのクチコミ ダイジェスト検索
+  %h3 Rettyのクチコミ ダイジェスト検索
   = form_tag("/result_retty", method: :get) do
     %input{type: "text", name: "url", placeholder: "Rettyのクチコミ一覧ページのURLいれてくれ"}
     = submit_tag "検索"
   %p 例：http://retty.me/area/PRE13/ARE1/SUB104/100000016360/reports/
+
+  %hr

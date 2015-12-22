@@ -58,7 +58,6 @@ GEM
       compass (~> 1.0.0)
       sass-rails (< 5.1)
       sprockets (< 2.13)
-    concurrent-ruby (1.0.0)
     config (1.0.0)
       activesupport (>= 3.0)
       deep_merge (~> 1.0.0)
