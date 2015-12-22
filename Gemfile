@@ -22,6 +22,7 @@ gem 'unf'
 gem 'google_drive'
 
 gem 'mechanize'
+gem "bugsnag"
 
 group :production do
   gem 'pg'

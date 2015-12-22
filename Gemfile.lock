@@ -33,6 +33,8 @@ GEM
       addressable (>= 2.3.1)
       extlib (>= 0.9.15)
       multi_json (>= 1.0.0)
+    bugsnag (2.8.1)
+      multi_json (~> 1.0)
     builder (3.2.2)
     chunky_png (1.3.5)
     coffee-rails (4.1.1)
@@ -267,6 +269,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bugsnag
   coffee-rails
   compass-rails
   enumerize
