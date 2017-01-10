@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 # Avoid invalid byte sequence error for OpsWorks
 Encoding.default_external = Encoding::UTF_8
 
-gem 'rails', '4.1.12'
+gem 'rails', '5.0.1'
 gem 'rails_autolink'
 gem 'haml-rails'
 gem 'sass-rails'
@@ -29,6 +29,7 @@ group :production do
   gem 'rails_12factor'
 end
 group :development, :test do
+  gem 'puma'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'sqlite3'
